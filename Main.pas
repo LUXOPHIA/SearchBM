@@ -40,7 +40,7 @@ type
     procedure ShowMatch;
   public
     { public 宣言 }
-    _SearchBM :TSearchbm<Word>;
+    _SearchBM :TSearchBM<Word>;
     _MatchI   :Integer;
   end;
 
@@ -229,7 +229,7 @@ begin
      _MatchI := _SearchBM.Match( _MatchI + 1, _ArrayN,
           procedure( const HeadI_:Integer; const Buffer_:TArray<Word> )
           begin
-               Move( _Array[ HeadI_ ], Buffer_[0], SizeOf( Word ) * Length( Buffer_ ) );
+               Move( _Array[ HeadI_ ], Buffer_[0], SizeOf( Word ) * _PatternN );
           end );
 
      ShowMatch;
