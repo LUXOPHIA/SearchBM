@@ -151,7 +151,6 @@ procedure TForm1.ShowMatch;
 begin
      with Memo1 do
      begin
-
           if _MatchI < 0 then
           begin
                SelStart  := 0;
