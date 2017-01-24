@@ -1,0 +1,95 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'SearchBM'
+  ClientHeight = 443
+  ClientWidth = 638
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ReadOnly = True
+    ShowScrollBars = False
+    StyledSettings = [Size, Style, FontColor]
+    TextSettings.Font.Family = #65325#65331' '#12468#12471#12483#12463
+    TextSettings.HorzAlign = Center
+    Position.X = 10.000000000000000000
+    Position.Y = 45.000000000000000000
+    Size.Width = 488.000000000000000000
+    Size.Height = 388.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 484.000000000000000000
+    Viewport.Height = 384.000000000000000000
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    ReadOnly = True
+    TextSettings.Font.Family = #65325#65331' '#12468#12471#12483#12463
+    TextSettings.HorzAlign = Center
+    Position.X = 10.000000000000000000
+    Position.Y = 10.000000000000000000
+    Size.Width = 488.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Size, Style, FontColor]
+  end
+  object Button1: TButton
+    Position.X = 518.000000000000000000
+    Position.Y = 20.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = #21021#26399#21270
+    OnClick = Button1Click
+  end
+  object GroupBox1: TGroupBox
+    Position.X = 508.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 205.000000000000000000
+    Size.PlatformDefault = False
+    Text = #26908#32034
+    TabOrder = 3
+    object Button2: TButton
+      Default = True
+      Position.X = 10.000000000000000000
+      Position.Y = 25.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = #23455#35013' A'
+      OnClick = Button2Click
+    end
+    object Button3: TButton
+      Position.X = 10.000000000000000000
+      Position.Y = 145.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = #23455#35013' B'
+      OnClick = Button3Click
+    end
+    object Button4: TButton
+      Position.X = 10.000000000000000000
+      Position.Y = 85.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = #23455#35013' C'
+      OnClick = Button4Click
+    end
+  end
+end
