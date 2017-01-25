@@ -4,6 +4,37 @@
 
 ![](https://media.githubusercontent.com/media/LUXOPHIA/SearchBM/0d4ffe8e2b5802edfe62a0b19dde8f3fe60ca023/--------/_SCREENSHOT/SearchBM.png)
 
+ジェネリクス化```TSearchBM<*>```されているので、どんな変数型の配列でも扱えます。
+
+```Pascal
+var
+   Ws :TArray<Word>;
+   S  :TSearchBM<Word>;
+   M  :Integer;
+   Ms :TArray<Integer>;
+
+      {  00     01     02     03     04     05     06     07     08     09   }
+Ws := [ $79FE, $BA26, $7B88, $BA26, $4F60, $A2A6, $7B15, $395C, $79FE, $7B88,
+        $3B5B, $B6F6, $4F60, $A2A6, $7B15, $395C, $8F63, $176C, $3E7E, $2E6E ];
+      {  10     11     12     13     14     15     16     17     18     19   }
+
+S := TSearchBM<Word>.Create;
+
+S.Pattern := [ $4F60, $A2A6, $7B15, $395C ];  //検索パターンの設定
+
+///// 最短検索
+{ 04 =} M := S.Match( Ws );
+{ 12 =} M := S.Match( Ws, 10 );        //検索開始位置の指定
+{ 12 =} M := S.Match( Ws, 10, 19+1 );  //検索終了位置の指定
+
+///// 複数検索
+{ [ 04, 12 ] =} Ms := S.Matches( Ws );
+{ [     12 ] =} Ms := S.Matches( Ws, 10 );        //検索開始位置の指定
+{ [ 04     ] =} Ms := S.Matches( Ws, 00, 09+1 );  //検索終了位置の指定
+
+S.Free;
+```
+
 ----
 
 * [Boyer-Moore algorithm](http://www-igm.univ-mlv.fr/~lecroq/string/node14.html)
