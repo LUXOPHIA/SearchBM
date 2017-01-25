@@ -11,3 +11,5 @@
 * [Algorytm BM (Boyer-Moore'a) - Implementacja w Delphi/Pascal - Algorytmy i Struktury Danych](http://www.algorytm.org/przetwarzanie-tekstu/algorytm-bm-boyer-moorea/bm-d.html)
 * [Computer Algorithms: Boyer-Moore String Searching](http://www.stoimen.com/blog/2012/04/17/computer-algorithms-boyer-moore-string-search-and-matching/)
 * [Boyer-Moore algorithm - コードの恵み](http://d.hatena.ne.jp/deve68/20120205/1328454937)
+
+[![Delphi Starter](http://img.en25.com/EloquaImages/clients/Embarcadero/%7B063f1eec-64a6-4c19-840f-9b59d407c914%7D_dx-starter-bn159.png)](https://www.embarcadero.com/jp/products/delphi/starter)
