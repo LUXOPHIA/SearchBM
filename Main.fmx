@@ -4,7 +4,7 @@ object Form1: TForm1
   BorderStyle = Single
   Caption = 'SearchBM'
   ClientHeight = 443
-  ClientWidth = 638
+  ClientWidth = 648
   Position = ScreenCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -43,7 +43,7 @@ object Form1: TForm1
     StyledSettings = [Size, Style, FontColor]
   end
   object Button1: TButton
-    Position.X = 518.000000000000000000
+    Position.X = 523.000000000000000000
     Position.Y = 20.000000000000000000
     Size.Width = 100.000000000000000000
     Size.Height = 50.000000000000000000
@@ -54,15 +54,15 @@ object Form1: TForm1
   end
   object GroupBox1: TGroupBox
     Position.X = 508.000000000000000000
-    Position.Y = 80.000000000000000000
-    Size.Width = 120.000000000000000000
-    Size.Height = 205.000000000000000000
+    Position.Y = 85.000000000000000000
+    Size.Width = 130.000000000000000000
+    Size.Height = 210.000000000000000000
     Size.PlatformDefault = False
     Text = #26908#32034
     TabOrder = 3
     object Button2: TButton
       Default = True
-      Position.X = 10.000000000000000000
+      Position.X = 15.000000000000000000
       Position.Y = 25.000000000000000000
       Size.Width = 100.000000000000000000
       Size.Height = 50.000000000000000000
@@ -72,7 +72,7 @@ object Form1: TForm1
       OnClick = Button2Click
     end
     object Button3: TButton
-      Position.X = 10.000000000000000000
+      Position.X = 15.000000000000000000
       Position.Y = 145.000000000000000000
       Size.Width = 100.000000000000000000
       Size.Height = 50.000000000000000000
@@ -82,7 +82,7 @@ object Form1: TForm1
       OnClick = Button3Click
     end
     object Button4: TButton
-      Position.X = 10.000000000000000000
+      Position.X = 15.000000000000000000
       Position.Y = 85.000000000000000000
       Size.Width = 100.000000000000000000
       Size.Height = 50.000000000000000000
